@@ -1,0 +1,8 @@
+Hashiam Kadhim
+
+Report for Homework 10
+
+Discuss the scaling:
+The run time was taken to be the longest run time of all the processors. From the plot we can see that it follows optimal scaling pretty well up until about 5 processors. The wall time then settles around 4.7 seconds with an optimal time of 4.57894 seconds at 23 processors. After 23 processors, the wall time seems to be increasing due to the increasing overhead of parallelization. So it stands to reason that 23 processors is the best number of processors if we care about only speed. However, from the strong scaling efficiency plot, we can see that the efficiency is dropping as we add more and more processors. So if we cared about efficiency as well, we might pick a smaller number of processors (this is the trade off).
+
+Note: I could have started timing from the very beginning of the code instead of the evolution part. I didn't do this on purpose to see the efficiency of the computations. If I had done it the other way, about 1 second would be added to all the wall times so we would see a small change anyway. 
